@@ -54,11 +54,19 @@ body {
   border-radius: 12px;
   font-weight: bold;
   text-decoration: none;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 .btn:hover {
   transform: scale(1.05);
+  background-color: #00c2e0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .image-wrapper {
@@ -73,4 +81,60 @@ body {
   border-radius: 12px;
   max-width: 100%;
   display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #111;
+  font-size: 0.9rem;
+}
+
+.museum {
+  text-align: center;
+  padding: 2rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.gallery-item {
+  display: block;
+  width: 200px;
+  background-color: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+}
+
+.gallery-item figcaption {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  background-color: #1a1a1a;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.about {
+  flex: 2;
+  max-width: 600px;
 }
